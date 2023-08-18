@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3jittoecommerceproducts1",
+  "bucketName": "jitto-ecommerce-products1",
+  "policyUUID": "f007714f",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

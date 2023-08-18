@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jittoecommerceapp-staging-201526-authRole",
+      "UnauthRoleArn": "arn:aws:iam::914302697186:role/amplify-jittoecommerceapp-staging-201526-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::914302697186:role/amplify-jittoecommerceapp-staging-201526-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-jittoecommerceapp-staging-201526-deployment",
+      "UnauthRoleName": "amplify-jittoecommerceapp-staging-201526-unauthRole",
+      "StackName": "amplify-jittoecommerceapp-staging-201526",
+      "StackId": "arn:aws:cloudformation:us-east-2:914302697186:stack/amplify-jittoecommerceapp-staging-201526/cdaeb340-3d3a-11ee-b471-0a21dd0106f7",
+      "AmplifyAppId": "dgisj33y1b3og"
+    },
+    "categories": {
+      "auth": {
+        "jittoecommerceapp": {}
+      },
+      "storage": {
+        "s3jittoecommerceproducts1": {}
+      }
+    }
+  }
+}
