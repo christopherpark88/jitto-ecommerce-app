@@ -8,9 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import {
-  Button,
   Flex,
-  Image,
   PhoneNumberField,
   SelectField,
   Text,
@@ -34,13 +32,11 @@ export default function FormCheckout(props) {
       <Flex
         gap="48px"
         direction="row"
-        width="unset"
+        width="auto"
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
-        grow="1"
-        shrink="1"
-        basis="0"
+        shrink="0"
         position="relative"
         padding="32px 0px 32px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -270,36 +266,8 @@ export default function FormCheckout(props) {
             position="relative"
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 41139343187")}
-          >
-            <Button
-              width="unset"
-              height="unset"
-              shrink="0"
-              alignSelf="stretch"
-              size="large"
-              isDisabled={false}
-              variation="primary"
-              children="Continue to payment"
-              {...getOverrideProps(overrides, "Button")}
-            ></Button>
-          </Flex>
+          ></Flex>
         </Flex>
-        <Image
-          width="unset"
-          height="unset"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
       </Flex>
     </Flex>
   );

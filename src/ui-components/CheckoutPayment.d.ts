@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, DividerProps, FlexProps, ImageProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { ButtonProps, DividerProps, FlexProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type CheckoutPaymentOverridesProps = {
     CheckoutPayment?: PrimitiveOverrideProps<FlexProps>;
@@ -25,7 +25,6 @@ export declare type CheckoutPaymentOverridesProps = {
     Button?: PrimitiveOverrideProps<ButtonProps>;
     "Frame 427"?: PrimitiveOverrideProps<FlexProps>;
     "Your order"?: PrimitiveOverrideProps<TextProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
     "Frame 316"?: PrimitiveOverrideProps<FlexProps>;
     Subtotal?: PrimitiveOverrideProps<TextProps>;
     "$320.00"?: PrimitiveOverrideProps<TextProps>;
@@ -41,6 +40,11 @@ export declare type CheckoutPaymentOverridesProps = {
     "$361.80"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type CheckoutPaymentProps = React.PropsWithChildren<Partial<FlexProps> & {
+    subtotal?: Number;
+    shipping?: Number;
+    taxes?: Number;
+    total?: Number;
+} & {
     overrides?: CheckoutPaymentOverridesProps | undefined | null;
 }>;
 export default function CheckoutPayment(props: CheckoutPaymentProps): React.ReactElement;

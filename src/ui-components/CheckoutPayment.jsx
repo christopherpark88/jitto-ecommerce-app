@@ -7,16 +7,16 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Button,
-  Divider,
-  Flex,
-  Image,
-  Text,
-  TextField,
-} from "@aws-amplify/ui-react";
+import { Button, Divider, Flex, Text, TextField } from "@aws-amplify/ui-react";
 export default function CheckoutPayment(props) {
-  const { overrides, ...rest } = props;
+  const {
+    subtotal = 0.0,
+    shipping = 0.0,
+    taxes = 0.0,
+    total = 0.0,
+    overrides,
+    ...rest
+  } = props;
   return (
     <Flex
       gap="48px"
@@ -33,7 +33,7 @@ export default function CheckoutPayment(props) {
       <Flex
         gap="48px"
         direction="row"
-        width="unset"
+        width="auto"
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
@@ -249,20 +249,6 @@ export default function CheckoutPayment(props) {
             children="Your order"
             {...getOverrideProps(overrides, "Your order")}
           ></Text>
-          <Image
-            width="unset"
-            height="348px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            objectFit="cover"
-            {...getOverrideProps(overrides, "image")}
-          ></Image>
           <Flex
             gap="262px"
             direction="row"
@@ -317,7 +303,7 @@ export default function CheckoutPayment(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="$320.00"
+              children={`${"$"}${subtotal}`}
               {...getOverrideProps(overrides, "$320.00")}
             ></Text>
           </Flex>
@@ -375,7 +361,7 @@ export default function CheckoutPayment(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="$15.00"
+              children={`${"$"}${shipping}`}
               {...getOverrideProps(overrides, "$15.00")}
             ></Text>
           </Flex>
@@ -433,7 +419,7 @@ export default function CheckoutPayment(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="$26.80"
+              children={`${"$"}${taxes}`}
               {...getOverrideProps(overrides, "$26.80")}
             ></Text>
           </Flex>
@@ -498,7 +484,7 @@ export default function CheckoutPayment(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="$361.80"
+              children={`${"$"}${total}`}
               {...getOverrideProps(overrides, "$361.80")}
             ></Text>
           </Flex>

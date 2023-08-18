@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, FlexProps, ImageProps, PhoneNumberFieldProps, SelectFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, PhoneNumberFieldProps, SelectFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type FormCheckoutOverridesProps = {
     FormCheckout?: PrimitiveOverrideProps<FlexProps>;
@@ -27,8 +27,6 @@ export declare type FormCheckoutOverridesProps = {
     TextField39343134?: PrimitiveOverrideProps<TextFieldProps>;
     PhoneNumberField?: PrimitiveOverrideProps<PhoneNumberFieldProps>;
     "Frame 41139343187"?: PrimitiveOverrideProps<FlexProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type FormCheckoutProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: FormCheckoutOverridesProps | undefined | null;
