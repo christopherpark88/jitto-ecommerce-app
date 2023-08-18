@@ -1,6 +1,6 @@
 # Ecommerce App Demo
 
-This project was built with AWS Amplify, a suite of everything required for building a fullstack application such as Cognito, S3 Buckets, etc.
+This project was built with AWS Amplify, a suite of everything required for building a fullstack application such as Cognito, S3 Buckets, etc. All requirements are met, and if I had more time I would've liked to add some features like more form verification on the checkout inputs as well as being able to properly handle purchases. Furthermore, there were some aspects of the frontend I would've liked to add more polish too as well, as it does look a bit bland and a bit clunky. At the very least, there are some comments and some code setup to be able to handle these features if needed in the future.
 
 While I've had experience using AWS Amplify, I noticed when I started this project that there was a feature called AWS Amplify Studio. It was released back in December 2021 as a visual interface that can be used to create AWS Amplify backed applications a bit easier according to the documentation.
 
