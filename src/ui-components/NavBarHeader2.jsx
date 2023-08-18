@@ -13,7 +13,7 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function NavBarHeader2(props) {
-  const { width, overrides, ...rest } = props;
+  const { width, checkoutLabel = "Checkout", overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
   const buttonThreeNineFourNineThreeFourSixSevenOnClick = useAuthSignOutAction({
     global: true,
@@ -101,7 +101,7 @@ export default function NavBarHeader2(props) {
           size="default"
           isDisabled={false}
           variation="link"
-          children="Checkout"
+          children={checkoutLabel}
           {...getOverrideProps(overrides, "Button39493466")}
         ></Button>
         <Button

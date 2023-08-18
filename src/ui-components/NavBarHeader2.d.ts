@@ -19,6 +19,7 @@ export declare type NavBarHeader2OverridesProps = {
 } & EscapeHatchProps;
 export declare type NavBarHeader2Props = React.PropsWithChildren<Partial<FlexProps> & {
     width?: String;
+    checkoutLabel?: String;
 } & {
     overrides?: NavBarHeader2OverridesProps | undefined | null;
 }>;
