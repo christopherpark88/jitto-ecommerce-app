@@ -16,6 +16,7 @@ https://dev.to/aws-builders/step-by-step-build-your-first-aws-amplify-and-react-
 https://docs.amplify.aws/console/uibuilder/override/#extend-generated-components-via-overrides-prop
 https://aws.amazon.com/blogs/mobile/write-your-own-code-with-aws-amplify-studio/
 
+Overall, while it took some time to understand how to use since this was my time using it, I would say if I had to remake this project again with the knowledge I have now, it would definitely be more time efficient to use AWS Amplify Studio, and I see myself using it again in the future if I need to quickly build out a project.
 
 # Getting Started with Create React App
 
